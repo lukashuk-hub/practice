@@ -6,91 +6,131 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/normalize.css">
-	<link rel="stylesheet" href="./css/slick.css">
-	<link rel="stylesheet" href="./css/styles.css">
-	<title>Document</title>
+	<link rel="stylesheet" href="/css/slick.css">
+	<link rel="shortcut icon" href="/icons/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="/css/styles.css">
+	<title>7XL</title>
 </head>
 
 <body>
-	<header class="logo">
+	<header class="header">	
 		<div class="container">
-			<a href="./index.html" class="logo__link"><img src="./images/logo.png" alt="logo"></a>
+				<img class="logo" src="./images/logo.svg" alt="logo">
 		</div>
 	</header>
+
 	<main>
-		<section class="hero">
-			<div class="banner">
-				<div class="banner_pic">
-					<div class="container"><button class="banner_btn"></button></div>
-				</div>
-				<div class="banner_pic banner_cashbeck">
+		<div class="banner">
+			<button class="banner_bonus" type="button"></button>
+			<button class="banner_cash" type="button"></button>
+		</div>
+
+		<section class="steps">
+			<div class="container container_steps">
+				<img class="arrow_icon" src="./icons/arrow.png" alt="arrow">
+				<div class="step_item"><span>1.</span>Register</div>
+				<img class="arrow_icon" src="./icons/arrow.png" alt="arrow">
+				<div class="step_item"><span>2.</span>Get 60% cashback</div>
+				<img class="arrow_icon" src="./icons/arrow.png" alt="arrow">
+				<div class="step_item"><span>3.</span>Deposit & Get up to 100 bonus</div>
+				<img class="arrow_icon" src="./icons/arrow.png" alt="arrow">
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<ul class="wrapper_features">
+					<li class="features_item">
+						<img src="./images/bonus.svg" alt="icon" class="features_icon">
+						<h2 class="features_text">Jackpot</h2>
+					</li>
+					<li class="features_item">
+						<img src="./images/jackpot.svg" alt="icon" class="features_icon">
+						<h2 class="features_text">Bonus</h2>
+					</li>
+					<li class="features_item">
+						<img src="./images/cashback.svg" alt="icon" class="features_icon">
+						<h2  class="features_text">Cashback</h2>
+					</li>
+					<li class="features_item">
+						<img src="./images/deposit.svg" alt="icon" class="features_icon">
+						<h2  class="features_text">Deposit</h2>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="game_room">
+			<div class="container">
+				<div class="wrapper_room">
+					<h1 class="room_title">GAME ROOM</h1>
+
+					<div class="wrapper_room_items">
+						<a href="#"><img src="./images/slots.png" alt="slots" class="game_item"></a>
+						<a href="#"><img src="./images/roulette.png" alt="roulette" class="game_item"></a>
+						<a href="#"><img src="./images/black-jack.png" alt="black-jack" class="game_item"></a>
+					</div>
+
+					<div class="wrapper_btn">
+						<button class="btn_registr" type="button">Sing up</button>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section class="desc">
-			<ol>
-				<li>Register</li>
-				<li>Get 60% cashback</li>
-				<li>Deposit & Get up to 100 bonus</li>
-			</ol>
-		</section>
-		<section>
-			<ul>
-				<li>
-					<h2>Jackpot</h2>
-				</li>
-				<li>
-					<h2>Bonus</h2>
-				</li>
-				<li>
-					<h2>cashback</h2>
-				</li>
-				<li>
-					<h2>deposit</h2>
-				</li>
-			</ul>
-		</section>
-		<section>
-			<h1>GAME ROOM</h1>
-			<ul>
-				<li>
-					<img src="./images/slots.png" alt="">
-				</li>
-				<li>
-					<img src="./images/roulette.png" alt="">
-				</li>
-				<li>
-					<img src="./images/black-jack.png" alt="">
-				</li>
-			</ul>
-			<button>Sing up</button>
-		</section>
-		<section class="currency">
-			<ul>
-				<li>Currencies: USD, ILS, EUR
-					Min Deposit: No
-					Min Withdrawal: 1USD
-					Comission: No
-					Progressing time
-					- One Deposit: Instant
-					- One Withdrawal: Within 24 hours</li>
-				<li>Currencies: USD
-					Min Deposit: No
-					Min Withdrawal: 1USD
-					Comission: No
-					Progressing time
-					- One Deposit: Instant
-					- One Withdrawal: Within 24 hours</li>
-				<li>Currencies: USD
-					Min Deposit: No
-					Min Withdrawal: 1USD
-					Comission: No
-					Progressing time
-					- One Deposit: After 1st confirmation
-					- One Withdrawal: Within 24 hours</li>
-			</ul>
+		<section class="payments">
+			<div class="container">
+				<div class="underline"></div>
+				<div class="wrapper_payments">
+					<div class="payment_item">
+						<img class="bitcoin_icon" src="./images/bitcoin.svg" alt="bitcoin">
+						<ul>
+							<li>Currencies: USD</li>
+							<li>Min Deposit: No</li>
+							<li>Min Withdrawal: 1USD</li>
+							<li>Comission: No</li>
+							<li>Progressing time <ul>
+								<li>- One Deposit:  After 1st confirmation </li>
+								<li>- One Withdrawal:  Within 24 hours</li>
+							</ul></li>
+						</ul>
+					</div>
+
+					<div class="payment_item">
+						<img class="webmoney_icon" src="./images/webmoney.svg" alt="bitcoin">
+						<ul>
+							<li>Currencies: USD</li>
+							<li>Min Deposit: No</li>
+							<li>Min Withdrawal: 1USD</li>
+							<li>Comission: No</li>
+							<li>Progressing time <ul>
+								<li>- One Deposit: Instant </li>
+								<li>- One Withdrawal: Within 24 hours</li>
+							</ul></li>
+						</ul>
+					</div>
+
+					<div class="payment_item">
+						<img class="zebrapay_icon" src="./images/zebrapay.svg" alt="bitcoin">
+						<ul>
+							<li>Currencies: USD</li>
+							<li>Min Deposit: No</li>
+							<li>Min Withdrawal: 1USD</li>
+							<li>Comission: No</li>
+							<li>Progressing time <ul>
+								<li>- One Deposit: Instant</li>
+								<li>- One Withdrawal: Within 24 hours</li>
+							</ul></li>
+						</ul>
+					</div>
+				</div>
+				<div class="wrapper_btn_payments">
+					<button class="btn_payments" type="button">Deposit</button>
+					<button class="btn_payments" type="button">Deposit</button>
+					<button class="btn_payments" type="button">Deposit</button>
+				</div>
+			</div>
+			<img src="./images/fire.png" alt="fire" class="fire_img">
 		</section>
 	</main>
+
 
 
 	  	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

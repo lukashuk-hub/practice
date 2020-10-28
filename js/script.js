@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.banner').slick({
-        /* autoplay: true, */
-       /*  autoplaySpeed: 2500, */
+        autoplay: true,  
+        autoplaySpeed: 2000, 
         arrows: false
         
     });
