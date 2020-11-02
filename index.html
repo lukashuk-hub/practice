@@ -205,14 +205,14 @@
                 <form class="modal_form">
                     <h1 class="modal_title">registration</h1>
                     <p class="modal_text">Fill the gistration form to get access to wide range of games!</p>
-                    <input type="text" name="username" id="name" placeholder="Username">
+                    <input required type="text" name="username" id="name" placeholder="Username">
                    
-						<input class="pass_item" type="password" name="password" id="password" placeholder="Password">
-                    	<input class="pass_item" type="password" name="configurationv" id="configurationv"
+						<input required class="pass_item" type="password" name="password" id="password" placeholder="Password">
+                    	<input required class="pass_item" type="password" name="configurationv" id="configurationv"
                         placeholder="Password configuration">
 					
-                    <input type="email" name="email" id="email" placeholder="You Email">
-                    <input placeholder="Israel (+972)" class="code_list" name="codes" id="code" list="codes">
+                    <input minlength="8" required type="email" name="email" id="email" placeholder="You Email">
+                    <input minlength="8" required placeholder="Israel (+972)" class="code_list" name="codes" id="code" list="codes">
                     <datalist id="codes">
                         <option>Israel (+972)</option>
                         <option>Algeria (+213)</option>
