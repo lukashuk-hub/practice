@@ -4,6 +4,12 @@
     box-sizing: border-box;
     color: #ffffff;
 }
+
+::after,
+::before {
+    box-sizing: border-box;
+}
+
 li {
     list-style-type: none;
 }
@@ -137,12 +143,12 @@ button:hover {
 }
 
 .wrapper_room {
-    padding-top: 110px;
+    padding-top: 10%;
     position: relative;
 }
 
 .room_title {
-    font-size: 60px;
+    font-size: 3.7rem;
     font-weight: 300;
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -150,7 +156,7 @@ button:hover {
 }
 
 .wrapper_room_items {
-    padding: 128px 0 135px 0;
+    padding: 13% 0 13% 0;
     display: flex;
     justify-content: space-evenly;
 }
@@ -158,7 +164,7 @@ button:hover {
 .game_item {
     display: block;
     width: 380px;
-    margin-right: 5px;
+    margin-right: 5%;
     border: 1px solid #0078d0;
     
 }
@@ -169,21 +175,20 @@ button:hover {
 }
 
 .btn_registr {
-    width: 380px;
+    width: 35%;
     height: 66px;
     background-color: #ef3737;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     font-family: 'Lato', sans-serif;
 }
 
 .btn_registr:hover {
     cursor: pointer;
-    animation: btn_registr 1s;
 
 }
 
-.underline {
+.underline_desk {
     margin-top: 112px;
     display: block;
     width: 100%;
@@ -192,33 +197,22 @@ button:hover {
 }
 
 .wrapper_payments {
-    padding-top: 128px;
+    padding-top: 128px 0 128px 0;
     display: flex;
     justify-content: space-around;
 }
-
-.bitcoin_icon {
-    margin-bottom: 29%;
+.wrapper_payments img {
     width: 215px;
     height: 56px;
-}
-.webmoney_icon {
-    margin-bottom: 28%;
-    width: 244px;
-    height: 64px;
-}
-.zebrapay_icon {
-    margin-bottom: 40%;
-    width: 245px;
-    height: 30px;
+    margin-bottom: 53px;
 }
 
 .payment_item {
-    margin-top: 75px;
-    font-size: 18px;
+    margin-top: 8%;
+    font-size: 1.1rem;
     font-weight: 400;
     font-family: 'Lato', sans-serif;
-    line-height: 36px;
+    line-height: 1.6;
     text-align: left;
 }
 
@@ -226,82 +220,457 @@ button:hover {
     position: relative;
 }
 
-.fire_img {
-    position: absolute;
-    top: 0;
+.payments {
+    background: url("../images/fire.png") center center/cover no-repeat;
+    
 }
 
-.wrapper_btn_payments {
-    padding-top: 115px;
+.wrapper_btn_payments_deck {
+    padding-top: 15%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+} 
+
 
 .btn_payments {
-    width: 300px;
+    width: 25%;
     height: 66px;
     border: 2px solid #ef3737;
     font-family: 'Lato', 'sans-serif';
     font-size: 24px;
-    z-index: 999;
+    margin-left: 15px;
 }
 
 .btn_payments:hover {
     background-color: #ef3737;
 }
 
-
-
-/*animatsia*/
-
-.fire_img {
-	-webkit-animation: kenburns-bottom-left 5s ease-out both;
-	        animation: kenburns-bottom-left 5s ease-out both;
+.accordion {
+    display: none;
 }
-@-webkit-keyframes kenburns-bottom-left {
-    0% {
-      -webkit-transform: scale(1) translate(0, 0);
-              transform: scale(1) translate(0, 0);
-      -webkit-transform-origin: 16% 84%;
-              transform-origin: 16% 84%;
-    }
-    100% {
-      -webkit-transform: scale(1.25) translate(-20px, 15px);
-              transform: scale(1.25) translate(-20px, 15px);
-      -webkit-transform-origin: left bottom;
-              transform-origin: left bottom;
-    }
-  }
-  @keyframes kenburns-bottom-left {
-    0% {
-      -webkit-transform: scale(1) translate(0, 0);
-              transform: scale(1) translate(0, 0);
-      -webkit-transform-origin: 16% 84%;
-              transform-origin: 16% 84%;
-    }
-    100% {
-      -webkit-transform: scale(1.25) translate(-20px, 15px);
-              transform: scale(1.25) translate(-20px, 15px);
-      -webkit-transform-origin: left bottom;
-              transform-origin: left bottom;
-    }
-  }
- 
 
-  @keyframes btn_registr {
-	0%, 20%, 60%, 100% {
-		transform: translateY(0);
-		transform: translateY(0);
-	}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #050505;
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100%;
+    min-height: 676px;
+    max-width: 1407px;
+    background: url('../images/bg_form.jpg') center center/cover no-repeat;
+}
+.modal_title{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 0.95;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+}
+.modal_text{
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 4%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.modal_form{
+    margin: 0 auto;
+    width: 70%;
+}
 
-	40% {
-		transform: translateY(-20px);
-		transform: translateY(-20px);
-	}
+.pass_item {
+    width: 48%;
+    margin-right: 13px;
+}
+.pass_item:nth-child(2) {
+    margin-right: 0;
+}
+input[type=email] {
+    width: 98%;
+}
 
-	80% {
-		transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
+input[type=tel] {
+    width: 78%;
+    margin-left: 7px;
+}
+
+input[type=text] {
+    width: 98%;
+}
+input {
+    height: 60px;
+    outline: none;
+    border: none;
+    margin-bottom: 23px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+
+.wrapper_btn_register {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.register{
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    background: #EF3737;
+    color: #FFFFFF;
+    width: 50%;
+    height: 80px;
+}
+
+.close {
+    font-size: 200%;
+    position: absolute;
+    right: 0;
+}
+
+
+
+@media (max-width: 875px) {
+    .step_item {
+        font-size: 100%;
+    }
+    .wrapper_features {
+        flex-wrap: wrap;
+    }
+    .payment_item {
+        font-size: 1rem;
+    }
+@media (max-width: 480px) {
+    .modal_form {
+        display: flex;
+        flex-direction: column;
+    }
+    .register {
+        font-size: 1.5rem;
+    }
+    .modal_title {
+        font-size: 1.5rem;
+    }
+    .modal_text {
+        font-size: 1rem;
+    }
+    input[type=tel] {
+        margin-left: 0;
+    }
+    .modal_form input {
+        width: 100%;
+    }
+    
+    .banner_bonus {
+        background: url("../images/banner_mob.png") center center/cover no-repeat;
+        
+    }
+    .wrapper_btn_payments_deck {
+        display: none;
+    }
+    .arrow_icon {
+        display: none;
+    }
+    .container_steps {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 150px;
+    }  
+    .step_item {
+        font-size: 100%;
+    }
+    .step_item span {
+        padding-left: 30px;
+    }
+    .step_item::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #0078d0;  
+        bottom: 33%;
+        left: 0;
+    }
+    .step_item::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #0078d0;  
+        top: 32%;
+        left: 0;
+    }
+   
+    .header {
+        height: 22%;
+        width: 100%;
+    }
+    .header .logo {
+        margin: 0 auto;
+    }
+    .wrapper_room_items {
+        flex-direction: column;
+    }
+    .game_item {
+        margin-bottom: 5%;
+    }
+    .btn_registr {
+        width: 87%;
+    }
+    .underline_desk {
+        display: none;
+    }
+    .underline_mob {
+        margin-top: 25%;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #0078d0;
+    }
+    .wrapper_payments {
+        display: none;
+    }
+
+    .accordion {
+        display: block;
+    }
+    .accordion_item {
+        margin-bottom: 20px;
+        position: relative;
+    
+    }
+    .accordion_item_trigger {
+        display: block;
+        padding: 30px;
+        width:  100%;
+        position: relative;
+    }
+    .accordion_item_content {
+        
+        padding-bottom: 50px;
+        display: none;
+    }
+    .accordion_item {
+        border-bottom: 1px solid #ffffff;
+    }
+    .accordion_item_input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    .accordion_item_trigger .unchecked {
+        font-size: 2.1rem;
+        position: absolute;
+        right: 0;
+        top: 35%;
+    }
+    .checked {
+        font-size: 2.1rem;
+        position: absolute;
+        right: 0;
+        top: 35%;
+        display: none;
+    }
+
+    .accordion_item_content ul {
+        padding-left: 25px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .accordion_item_input:checked ~ .accordion_item_trigger .unchecked {
+        display: none;
+    }
+
+    .accordion_item_input:checked ~ .accordion_item_trigger .checked {
+        display: block;
+    }
+    .accordion_item_input:checked ~ .accordion_item_content {
+        display: block;
+    }
+
+    .accordion_item img {
+        width: 187px;
+        height: 40px;
+    }
+
+    .wrapper_btn_payments {
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 660px) {
+    .banner_bonus {
+        background: url("../images/banner_mob.png") center center/cover no-repeat;
+        
+    }
+    .modal_form {
+        display: flex;
+        flex-direction: column;
+    }
+    input[type=tel] {
+        margin-left: 0;
+    }
+    .wrapper_btn_payments_deck {
+        display: none;
+    }
+    .arrow_icon {
+        display: none;
+    }
+    .wrapper_btn_payments {
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    .container_steps {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 150px;
+    }  
+    .step_item {
+        font-size: 100%;
+    }
+    .step_item span {
+        padding-left: 30px;
+    }
+    .step_item::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #0078d0;  
+        bottom: 33%;
+        left: 0;
+    }
+    .step_item::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #0078d0;  
+        top: 32%;
+        left: 0;
+    }
+   
+    .header {
+        height: 22%;
+        width: 100%;
+    }
+    .header .logo {
+        margin: 0 auto;
+    }
+    .wrapper_room_items {
+        flex-direction: column;
+    }
+    .game_item {
+        margin-bottom: 5%;
+    }
+    .btn_registr {
+        width: 87%;
+    }
+    .underline_desk {
+        display: none;
+    }
+    .underline_mob {
+        margin-top: 25%;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #0078d0;
+    }
+    .wrapper_payments {
+        display: none;
+    }
+
+    .accordion {
+        display: block;
+
+    }
+    .accordion_item {
+        margin-bottom: 20px;
+        position: relative;
+    
+    }
+    .accordion_item_trigger {
+        display: block;
+        padding: 30px;
+        width:  100%;
+        position: relative;
+    }
+    .accordion_item_content {
+        
+        padding-bottom: 50px;
+        display: none;
+    }
+    .accordion_item {
+        border-bottom: 1px solid #ffffff;
+    }
+    .accordion_item_input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    .accordion_item_trigger .unchecked {
+        font-size: 2.1rem;
+        position: absolute;
+        right: 0;
+        top: 35%;
+    }
+    .checked {
+        font-size: 2.1rem;
+        position: absolute;
+        right: 0;
+        top: 35%;
+        display: none;
+    }
+
+    .accordion_item_content ul {
+        padding-left: 25px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .accordion_item_input:checked ~ .accordion_item_trigger .unchecked {
+        display: none;
+    }
+
+    .accordion_item_input:checked ~ .accordion_item_trigger .checked {
+        display: block;
+    }
+    .accordion_item_input:checked ~ .accordion_item_content {
+        display: block;
+    }
+
+    .btn_payments {
+        width: 70%;
+    }
+
+    .accordion_item img {
+        width: 187px;
+        height: 40px;
+    }
 }
