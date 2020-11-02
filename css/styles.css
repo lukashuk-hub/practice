@@ -268,8 +268,8 @@ button:hover {
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 100%;
-    min-height: 676px;
-    max-width: 1407px;
+    min-height: 80%;
+    max-width: 100%;
     background: url('../images/bg_form.jpg') center center/cover no-repeat;
 }
 .modal_title{
@@ -294,15 +294,21 @@ button:hover {
     width: 70%;
 }
 
-.pass_item {
-    width: 48%;
-    margin-right: 13px;
+
+.password {
+    display: flex;
+    justify-content: space-between;
 }
-.pass_item:nth-child(2) {
-    margin-right: 0;
+.pass_item {
+    width: 49%;
 }
 input[type=email] {
-    width: 98%;
+    width: 100%;
+}
+
+.code_list {
+    display: flex;
+    justify-content: space-between;
 }
 
 input[type=tel] {
@@ -311,7 +317,7 @@ input[type=tel] {
 }
 
 input[type=text] {
-    width: 98%;
+    width: 100%;
 }
 input {
     height: 60px;
@@ -339,7 +345,7 @@ input {
 }
 
 .close {
-    font-size: 200%;
+    font-size: 3rem;
     position: absolute;
     right: 0;
 }
@@ -357,6 +363,12 @@ input {
         font-size: 1rem;
     }
 @media (max-width: 480px) {
+    .password {
+        flex-direction: column;
+    }
+    .code_list {
+        flex-direction: column;
+    }
     .modal_form {
         display: flex;
         flex-direction: column;

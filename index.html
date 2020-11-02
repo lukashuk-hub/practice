@@ -206,13 +206,15 @@
                     <h1 class="modal_title">registration</h1>
                     <p class="modal_text">Fill the gistration form to get access to wide range of games!</p>
                     <input required type="text" name="username" id="name" placeholder="Username">
-                   
-						<input required class="pass_item" type="password" name="password" id="password" placeholder="Password">
-                    	<input required class="pass_item" type="password" name="configurationv" id="configurationv"
+                   <div class="password">
+						<input minlength="8" required class="pass_item" type="password" name="password" id="password" placeholder="Password">
+                    	<input minlength="8" required class="pass_item" type="password" name="configurationv" id="configurationv"
                         placeholder="Password configuration">
+				   </div>
 					
-                    <input minlength="8" required type="email" name="email" id="email" placeholder="You Email">
-                    <input minlength="8" required placeholder="Israel (+972)" class="code_list" name="codes" id="code" list="codes">
+                    <input  required type="email" name="email" id="email" placeholder="You Email">
+                    <div class="code_list">
+						<input  required placeholder="Israel (+972)" class="code_list" name="codes" id="code" list="codes">
                     <datalist id="codes">
                         <option>Israel (+972)</option>
                         <option>Algeria (+213)</option>
@@ -431,6 +433,7 @@
                         <option>Zimbabwe (+263)</option>
                     </datalist>
                     <input type="tel" name="tel" id="tel" placeholder="You Phone">
+					</div>
 					
                     <div class="wrapper_btn_register"><button type="submit" class="register">REGISTER</button></div>
                 </form>
