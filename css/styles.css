@@ -5,6 +5,23 @@
     color: #ffffff;
 }
 
+@font-face {
+    font-family: 'Gotham Pro Black';
+    src: 
+    url('../fonts/GothamPro-Black.woff') format('woff'),
+    url('../fonts/GothamPro-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Pro Medium';
+    src: 
+    url('../fonts/GothamPro-Medium.woff') format('woff'),
+    url('../fonts/GothamPro-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 ::after,
 ::before {
     box-sizing: border-box;
@@ -56,15 +73,49 @@ button:hover {
 }
 
 .banner_bonus {
-    background: url('../images//banner_pic.png') center center/cover no-repeat;
+    background: url('../images/banner_pic.jpg') center center/cover no-repeat;
     width: 100%;
     height: 100vh;
 }
 
 .banner_cash {
-    background: url('../images//banner_cash.png') center center/cover no-repeat;
+    background: url('../images/banner_cash.jpg') center center/cover no-repeat;
     width: 100%;
     height: 100vh;
+}
+
+.banner_content .and {
+    color: #ef3737;
+    font-size: 80px;
+    font-family: 'Gotham Pro Medium';
+}
+.banner_content .bonus {
+    font-size: 124px;
+    font-family: 'Gotham Pro Black';
+    letter-spacing: .7rem;    
+}
+
+.banner_content .hundred_bonus {
+    font-size: 190px;
+    color: #ef3737;
+    font-family: 'Gotham Pro Black';
+}
+
+.banner_content {
+    color: #f1f2f4;
+    font-size: 77px;
+    letter-spacing: .7rem;
+    line-height: 1;
+    font-family: 'Gotham Pro Medium';
+    padding-top: 23%;
+}
+
+.banner_btn button {
+    height: 118px;
+    width: 50%;
+    background-color: #ef3737;
+    font-size: 40px;
+    font-family: 'Gotham Pro Medium';
 }
 
 .steps {
@@ -364,6 +415,15 @@ input {
         font-size: 1rem;
     }
 @media (max-width: 480px) {
+    .banner_bonus {
+        background-position: right;
+    }
+    .banner_cash {
+        background-position: right;
+    }
+    .banner_content .bonus {
+        font-size: 70px;
+    }
     .password {
         flex-direction: column;
     }
@@ -388,11 +448,6 @@ input {
     }
     .modal_form input {
         width: 100%;
-    }
-    
-    .banner_bonus {
-        background: url("../images/banner_mob.png") center center/cover no-repeat;
-        
     }
     .wrapper_btn_payments_deck {
         display: none;
@@ -533,10 +588,38 @@ input {
     }
 }
 
+@media (max-width: 870px){
+    .banner_content {
+        padding-top: 45%;
+        font-size: 50px;
+    }
+    .banner_content .hundred_bonus {
+        font-size: 120px;
+    }
+    .banner_btn button{
+        width: 100%;
+    }
+}
+
 @media (max-width: 660px) {
     .banner_bonus {
-        background: url("../images/banner_mob.png") center center/cover no-repeat;
-        
+        background-position: right;
+    }
+    .banner_cash {
+        background-position: right;
+    }
+    .banner_btn button{
+        width: 100%;
+    }
+    .banner_content {
+        padding-top: 64%;
+        font-size: 50px;
+    }
+    .banner_content .bonus {
+        font-size: 90px;
+    }
+    .banner_content .hundred_bonus {
+        font-size: 120px;
     }
     .modal_form {
         display: flex;
@@ -590,7 +673,7 @@ input {
     }
    
     .header {
-        height: 22%;
+        height: 20%;
         width: 100%;
     }
     .header .logo {
