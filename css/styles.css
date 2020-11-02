@@ -44,7 +44,7 @@ button:hover {
 
 .header {
     width: 100%;
-    height: 200px;
+    height: 18%;
     background-color: rgba(0, 0, 0, .5);
     position: absolute;
     z-index: 2;
@@ -434,7 +434,7 @@ input {
     }
    
     .header {
-        height: 22%;
+        height: 18%;
         width: 100%;
     }
     .header .logo {
