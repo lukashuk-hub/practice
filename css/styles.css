@@ -107,7 +107,7 @@ button:hover {
     letter-spacing: .7rem;
     line-height: 1;
     font-family: 'Gotham Pro Medium';
-    padding-top: 19%;
+    padding-top: 18%;
 }
 
 .banner_btn button {
@@ -415,6 +415,10 @@ input {
         font-size: 1rem;
     }
 @media (max-width: 480px) {
+    .banner_btn button {
+        height: 90px;
+        font-size: 2rem;
+    }
     .banner_bonus {
         background-position: right;
     }
