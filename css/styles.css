@@ -346,6 +346,20 @@ button:hover {
     width: 70%;
 }
 
+.countries option {
+    color: black;
+    font-family: 'Roboto', sans-serif; 
+    outline: none; 
+    
+}
+.countries {
+    color: black;
+    height: 60px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    width: 25%;
+    margin: 0 5px 23px 0; 
+}
 
 .password {
     display: flex;
@@ -394,6 +408,7 @@ input {
     color: #FFFFFF;
     width: 50%;
     height: 80px;
+    margin-top: 5%;
 }
 
 .close {
@@ -415,6 +430,9 @@ input {
         font-size: 1rem;
     }
 @media (max-width: 480px) {
+    .countries {
+        width: 100%;
+    }
     .banner_btn button {
         height: 90px;
         font-size: 2rem;
