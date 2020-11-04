@@ -441,7 +441,7 @@ input {
     }
     .banner_btn button {
         width: 95%;
-        height: 90px;
+        height: 80px;
         font-size: 2rem;
     }
     .banner_content .hundred_bonus {
@@ -622,14 +622,15 @@ input {
 
 @media (max-width: 870px){
     .banner_content {
-        padding-top: 190px;
+        padding-top: 180px;
         font-size: 50px;
     }
     .banner_content .hundred_bonus {
         font-size: 90px;
     }
     .banner_btn button{
-        width: 100%;
+        width: 90%;
+        height: 80px;
     }
 }
 
@@ -647,7 +648,7 @@ input {
         width: 100%;
     }
     .banner_content {
-        padding-top: 190px;
+        padding-top: 180px;
         font-size: 50px;
     }
     .banner_content .bonus {
