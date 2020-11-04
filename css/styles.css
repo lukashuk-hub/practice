@@ -107,7 +107,7 @@ button:hover {
     letter-spacing: .7rem;
     line-height: 1;
     font-family: 'Gotham Pro Medium';
-    padding-top: 230px;
+    padding-top: 200px;
 }
 
 .banner_btn button {
@@ -621,11 +621,8 @@ input {
 }
 
 @media (max-width: 870px){
-    .header .logo {
-        height: 100px;
-    }
     .banner_content {
-        padding-top: 240px;
+        padding-top: 190px;
         font-size: 50px;
     }
     .banner_content .hundred_bonus {
@@ -650,7 +647,7 @@ input {
         width: 100%;
     }
     .banner_content {
-        padding-top: 240px;
+        padding-top: 190px;
         font-size: 50px;
     }
     .banner_content .bonus {
