@@ -197,8 +197,8 @@ button:hover {
 }
 
 .features_icon{
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
 }
 
 .wrapper_room {
@@ -222,10 +222,8 @@ button:hover {
 
 .game_item {
     display: block;
-    width: 380px;
-    margin-right: 5%;
-    border: 1px solid #0078d0;
-    
+    width: 96%;
+    border: 1px solid #0078d0;    
 }
 
 .wrapper_btn {
@@ -434,13 +432,23 @@ input {
     .step_item {
         font-size: 100%;
     }
-    .wrapper_features {
+   /*  .wrapper_features {
         flex-wrap: wrap;
-    }
+    } */
     .payment_item {
         font-size: 1rem;
     }
 @media (max-width: 480px) {
+    .wrapper_features {
+        flex-wrap: wrap;
+    }
+    .features_icon {
+        height: 110px;
+        width: 110px;
+    }
+    .features_text {
+        font-size: 19px;
+    }
     .header .logo {
         height: 100px;
     }
@@ -623,6 +631,14 @@ input {
 }
 
 @media (max-width: 870px){
+    .features_icon {
+        width: 130px;
+        height: 130px;
+        margin: 10px;
+    }
+    .features_text {
+        font-size: 27px;
+    }
     .banner_content {
         padding-top: 180px;
         font-size: 50px;
@@ -634,9 +650,16 @@ input {
         width: 90%;
         height: 80px;
     }
+    .game_item img {
+        margin-bottom: 5%;
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 660px) {
+    .wrapper_features {
+        flex-wrap: wrap;
+    }
     .header .logo {
         height: 100px;
     }
@@ -716,6 +739,7 @@ input {
     }
     .game_item {
         margin-bottom: 5%;
+        margin-right: none;
     }
     .btn_registr {
         width: 87%;
