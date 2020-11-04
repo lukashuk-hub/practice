@@ -179,7 +179,7 @@ button:hover {
 }
 
 .wrapper_features{
-    padding-top: 140px;
+    padding-top: 10%;
     display: flex;
     justify-content: space-around;
 }
