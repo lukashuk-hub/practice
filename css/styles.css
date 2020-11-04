@@ -420,6 +420,9 @@ input {
 
 
 @media (max-width: 875px) {
+    .header .logo {
+        height: 100px;
+    }
     .step_item {
         font-size: 100%;
     }
@@ -430,6 +433,9 @@ input {
         font-size: 1rem;
     }
 @media (max-width: 480px) {
+    .header .logo {
+        height: 100px;
+    }
     .countries {
         width: 100%;
     }
@@ -611,6 +617,9 @@ input {
 }
 
 @media (max-width: 870px){
+    .header .logo {
+        height: 100px;
+    }
     .banner_content {
         padding-top: 45%;
         font-size: 50px;
@@ -624,6 +633,9 @@ input {
 }
 
 @media (max-width: 660px) {
+    .header .logo {
+        height: 100px;
+    }
     .banner_bonus {
         background-position: right;
     }
