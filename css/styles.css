@@ -107,7 +107,7 @@ button:hover {
     letter-spacing: .7rem;
     line-height: 1;
     font-family: 'Gotham Pro Medium';
-    padding-top: 17%;
+    padding-top: 230px;
 }
 
 .banner_btn button {
@@ -440,8 +440,12 @@ input {
         width: 100%;
     }
     .banner_btn button {
+        width: 95%;
         height: 90px;
         font-size: 2rem;
+    }
+    .banner_content .hundred_bonus {
+        font-size: 90px;
     }
     .banner_bonus {
         background-position: right;
@@ -621,11 +625,11 @@ input {
         height: 100px;
     }
     .banner_content {
-        padding-top: 45%;
+        padding-top: 240px;
         font-size: 50px;
     }
     .banner_content .hundred_bonus {
-        font-size: 120px;
+        font-size: 90px;
     }
     .banner_btn button{
         width: 100%;
@@ -646,14 +650,14 @@ input {
         width: 100%;
     }
     .banner_content {
-        padding-top: 64%;
+        padding-top: 240px;
         font-size: 50px;
     }
     .banner_content .bonus {
         font-size: 90px;
     }
     .banner_content .hundred_bonus {
-        font-size: 120px;
+        font-size: 90px;
     }
     .modal_form {
         display: flex;
