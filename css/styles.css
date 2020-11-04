@@ -507,7 +507,7 @@ input {
         font-size: 100%;
     }
     .step_item span {
-        padding-left: 30px;
+        padding-left: 60px;
     }
     .step_item::after {
         content: "";
@@ -704,7 +704,7 @@ input {
         font-size: 100%;
     }
     .step_item span {
-        padding-left: 30px;
+        padding-left: 60px;
     }
     .step_item::after {
         content: "";
