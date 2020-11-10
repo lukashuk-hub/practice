@@ -466,18 +466,22 @@ input {
         height: 100px;
     }
     .banner_btn button{
+        height: 55px;
         width: 70%;
         font-size: 1.7rem;
     }
     .banner_content {
-        padding-top: 180px;
+        padding-top: 140px;
+        font-size: 25px;
+    }
+    .banner_content .and {
         font-size: 50px;
     }
     .banner_content .bonus {
-        font-size: 80px;
+        font-size: 50px;
     }
     .banner_content .hundred_bonus {
-        font-size: 90px;
+        font-size: 50px;
     }
     .modal_form {
         display: flex;
@@ -531,7 +535,7 @@ input {
     }
    
     .header {
-        height: 20%;
+        height: 13%;
         width: 100%;
     }
     .header .logo {
@@ -641,21 +645,27 @@ input {
         font-size: 19px;
     }
     .header .logo {
-        height: 100px;
+        height: 80px;
     }
     .countries {
         width: 100%;
     }
     .banner_btn button {
-        width: 95%;
-        height: 80px;
-        font-size: 2rem;
+        width: 70%;
+        height: 45px;
+        font-size: 21px;
+    }
+    .banner_content {
+        padding-top: 75px;
     }
     .banner_content .hundred_bonus {
-        font-size: 90px;
+        font-size: 40px;
     }
     .banner_content .bonus {
-        font-size: 70px;
+        font-size: 40px;
+    }
+    ..banner_content .and {
+        font-size: 40px;
     }
     .password {
         flex-direction: column;
@@ -722,7 +732,7 @@ input {
     }
    
     .header {
-        height: 18%;
+        height: 80px;
         width: 100%;
     }
     .header .logo {
