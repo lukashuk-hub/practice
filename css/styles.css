@@ -634,6 +634,10 @@ input {
 }
 
 @media (max-width: 480px) {
+
+    .container_mobile {
+        width: 90%;
+    }
     .wrapper_features {
         flex-wrap: wrap;
     }
@@ -651,7 +655,7 @@ input {
         width: 100%;
     }
     .banner_btn button {
-        width: 70%;
+        width: 46%;
         height: 45px;
         font-size: 21px;
     }
